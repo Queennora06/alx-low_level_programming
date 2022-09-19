@@ -11,7 +11,7 @@
 */
 
 int main(void)
-<F11>{
+{
 	unsigned long fib1 = 0, fib2 = 1, sum;
 	float total_sum;
 
