@@ -2,16 +2,16 @@
 
 /**
  * _puts - prints a string
- * @str: string to the printed
+ * @str: string to be printed
  * Return: string
  */
 void _puts(char *str)
 {
-	int 1;
+	int i;
 
-	for (1 = 0; str[1] != '\0'; 1++)
+	for (i = 0; str[i] != '\0'; i++)
 	{
-		_putchar(str[1]);
+		_putchar(str[i]);
 	}
 	_putchar('\n');
 }
