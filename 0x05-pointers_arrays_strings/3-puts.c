@@ -2,7 +2,7 @@
 
 /**
  * _puts - prints a string
- * @str: string to be printed
+ * @str: string to the printed
  * Return: string
  */
 void _puts(char *str)
@@ -11,7 +11,7 @@ void _puts(char *str)
 
 	for (1 = 0; str[1] != '\0'; 1++)
 	{
-		_putchar(str[1];
+		_putchar(str[1]);
 	}
 	_putchar('\n');
 }
