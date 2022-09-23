@@ -2,8 +2,8 @@
 #include <stdio.h>
 
 /**
- * cap_string - ---
- * @s: ---
+ * cap_string - _ _ _
+ * @s: _ _ _
  *
  * Return: char value
  */
