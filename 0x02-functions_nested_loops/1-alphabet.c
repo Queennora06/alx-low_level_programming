@@ -1,18 +1,16 @@
 #include "main.h"
-
 /**
- *print_alphabet- To print alphabets
+ * print_alphabet- To print alphabets
  *
- *Return: Always return 0 on success
+ *
+ * Return: Always return 0 on success
  */
 void print_alphabet(void)
 {
-	    int ch;
-
-	        for (ch = 'a'; ch <= 'z'; ++ch)
-		{
-			        _putchar(ch);
-		}
-		    _putchar('\n');
-
-}i
+char c;
+for (c = 'a'; c <= 'z'; c++)
+{
+_putchar(c);
+}
+_putchar('\n');
+}
