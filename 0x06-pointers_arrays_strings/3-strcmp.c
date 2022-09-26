@@ -1,51 +1,17 @@
 #include "main.h"
 
 /**
- * _strcmp - Compares two strings
- * @s1: The first string
- * @s2: The second string
- *
- * Return: int value
+ * _puts- Prints strings
+ * @str: String to be used
  */
-int _strcmp(char *s1, char *s2)
+
+void _puts(char *str)
 {
-	int a = 0, b = 0, c = 0, r = 0, lim;
+	long p;
 
-	while (s1[a])
-	{
-		a++;
-	}
+	p = 0;
 
-	while (s2[b])
-	{
-		b++;
-	}
-
-	if (a <= b)
-	{
-		lim = a;
-	}
-	else
-	{
-		lim = b;
-	}
-
-	while (c <= lim)
-	{
-		if (s1[c] == s2[c])
-		{
-			c++;
-			continue;
-		}
-		else
-		{
-			r = s1[c] - s2[c];
-			break;
-		}
-
-		c++;
-
-	}
-
-	return (s);
+	for ( ; str[p] != '\0'; p++)
+		_putchar(str[p]);
+	_putchar('\n');
 }
