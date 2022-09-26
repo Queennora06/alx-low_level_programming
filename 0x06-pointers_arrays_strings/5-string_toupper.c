@@ -1,31 +1,26 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * cap_string - ...
- * @s: ...
- *
- * Return: char value
+ * rev_string- Reverses a string
+ * @s: String to be evaluated
  */
-char *cap_string(char *s)
+
+void rev_string(char *s)
 {
-	int a = 0, i;
-	int cspc = 13;
-	char spc[] = {32, '\t', '\n', 44, ';', 46, '!', '?', '"', '(', ')', '{', '}'};
+	long i = 0;
+	char first, last;
+	long size, half;
 
-	while (s[a])
+	for ( ; s[i] != '\0'; )
+		i++;
+	size = i - 1;
+	half = size / 2;
+	while (half >= 0)
 	{
-		i = 0;
-
-		while (i < cspc)
-		{
-			if ((a == 0 || s[a - 1] == spc[i] && (s[a] >= 97 && s[a] <= 122))
-					s[a] -= 32;
-				i++;
-		}
-
-		a++;
+		first = s[size - half];
+		last = s[half];
+		s[half] = first;
+		s[size - half] = last;
+		half--;
 	}
-
-	return (s);
 }
