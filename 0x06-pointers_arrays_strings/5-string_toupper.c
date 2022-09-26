@@ -1,26 +1,17 @@
 #include "main.h"
 
 /**
- * rev_string- Reverses a string
- * @s: String to be evaluated
+ * _puts- Prints strings
+ * @str: String to be used
  */
 
-void rev_string(char *s)
+void _puts(char *str)
 {
-	long i = 0;
-	char first, last;
-	long size, half;
+	long p;
 
-	for ( ; s[i] != '\0'; )
-		i++;
-	size = i - 1;
-	half = size / 2;
-	while (half >= 0)
-	{
-		first = s[size - half];
-		last = s[half];
-		s[half] = first;
-		s[size - half] = last;
-		half--;
-	}
+	p = 0;
+
+	for ( ; str[p] != '\0'; p++)
+		_putchar(str[p]);
+	_putchar('\n');
 }
