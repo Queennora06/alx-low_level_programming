@@ -1,27 +1,6 @@
 #include "main.h"
 
 /**
- * p1 - palindrome
- * @s: pointer to string
- * @1: position
- * Return: boolena
- */
-
-int p1(char *s, int 1)
-{
-	if (1 < 1)
-	{
-		return (1);
-	}
-
-	if (*s == *(s + 1))
-	{
-		return (p1(s + 1, 1 - 2));
-	}
-	return (0);
-}
-
-/**
  * is_palindrome - palindrome
  * @s: pointer to string
  * Return: recursion
