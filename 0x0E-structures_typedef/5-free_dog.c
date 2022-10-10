@@ -1,6 +1,7 @@
 #include "dog.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <stddef.h>
 
 /**
  * free_dog - Frees dogs.
@@ -19,6 +20,7 @@ void free_dog(dog_t *d)
 dog.h
 #ifndef DOG_H
 #define DOG_H
+
 /**
  * struct dog - A new type describing a dog.
  * @name: The name of the dog.
