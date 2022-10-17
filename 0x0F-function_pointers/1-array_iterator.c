@@ -1,4 +1,3 @@
-1-array_iterator.c
 #include "function_pointers.h"
 
 /**
