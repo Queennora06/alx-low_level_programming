@@ -9,16 +9,17 @@
   */
 int _strlen(char *s)
 {
-int counter = 0;
-if (!*s)
+	int counter = 0;
+	if (!*s)
         return (0);
-while (*s)
-{
-        counter++;
-        s++;
+	while (*s)
+	{
+		counter++;
+		s++;
+	}
+	return (counter);
 }
-return (counter);
-}
+
 /**
  * str_concat - concatenates two strings
  * @s1: one string
@@ -28,11 +29,11 @@ return (counter);
 
 char *str_concat(char *s1, char *s2)
 {
-        char *new;
+	char *new;
         unsigned int i;
         unsigned int j;
         int total = 0;
-        if (!s1)
+	if (!s1)
                 s1 = "";
         if (!s2)
                 s2 = "";
