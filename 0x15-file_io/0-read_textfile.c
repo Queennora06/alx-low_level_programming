@@ -1,5 +1,6 @@
 #include "main.h"
 
+
 /**
  * read_textfile - reads a text file and prints the letters
  * @filename: filename.
@@ -10,7 +11,7 @@
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int fd;
-	ssize_t nrd, nwr;
+	size_t nrd, nwr;
 	char *buf;
 
 	if (!filename)
