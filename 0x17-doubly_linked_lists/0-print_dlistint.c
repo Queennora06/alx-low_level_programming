@@ -3,24 +3,24 @@
 /**
  * dlistint_len- prints number of elements
  * @h: head of d list
- * Return: 0
+ * Return: Always 0
  */
 
 size_t dlistint_len(const dlistint_t *h)
 {
-	const dlistint_t *nora = h;
+	const dlistint_t *elo = h;
 	size_t count = 0;
 
-	if (nora == NULL)
+	if (elo == NULL)
 		return (count);
 
-	while (nora->prev != NULL)
-		nora = nora->prev;
+	while (elo->prev != NULL)
+		elo = elo->prev;
 
-	while (nora != NULL)
+	while (elo != NULL)
 	{
 		count++;
-		nora = nora->next;
+		elo = elo->next;
 	}
 
 	return (count);
