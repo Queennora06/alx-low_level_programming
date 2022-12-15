@@ -1,15 +1,16 @@
 #include "lists.h"
 
 /**
- * dlistint_len- prints number of elements
+ * print_dlistint- print integer of d dlistint_t
  * @h: head of d list
  * Return: Always 0
  */
 
-size_t dlistint_len(const dlistint_t *h)
+size_t print_dlistint(const dlistint_t *h)
 {
 	const dlistint_t *elo = h;
 	size_t count = 0;
+
 
 	if (elo == NULL)
 		return (count);
@@ -19,10 +20,10 @@ size_t dlistint_len(const dlistint_t *h)
 
 	while (elo != NULL)
 	{
+		printf("%d\n", elo->n);
 		count++;
 		elo = elo->next;
 	}
-
 	return (count);
 
 }
